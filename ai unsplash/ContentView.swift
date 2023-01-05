@@ -67,7 +67,7 @@ struct ContentView: View {
         .cornerRadius(8)
       }
       .padding()
-      .navigationBarTitle("Random Walpaper")
+      .navigationBarTitle("Random Wallpaper")
       // Add a button to the navigation bar to access the image history view
       .navigationBarItems(trailing:
         NavigationLink(destination: ImageHistoryView(imageHistory: $imageHistory)) {

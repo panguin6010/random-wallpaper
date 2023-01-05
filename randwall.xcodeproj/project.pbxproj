@@ -37,14 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05C27788295E3CC0006E1589 /* ai unsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ai unsplash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C27788295E3CC0006E1589 /* randwall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = randwall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2778B295E3CC0006E1589 /* ai_unsplashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ai_unsplashApp.swift; sourceTree = "<group>"; };
 		05C2778D295E3CC0006E1589 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05C2778F295E3CC0006E1589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05C27792295E3CC0006E1589 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		05C27798295E3CC1006E1589 /* ai unsplashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ai unsplashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C27798295E3CC1006E1589 /* randwallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = randwallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2779C295E3CC1006E1589 /* ai_unsplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ai_unsplashTests.swift; sourceTree = "<group>"; };
-		05C277A2295E3CC1006E1589 /* ai unsplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ai unsplashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C277A2295E3CC1006E1589 /* randwallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = randwallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C277A6295E3CC1006E1589 /* ai_unsplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ai_unsplashUITests.swift; sourceTree = "<group>"; };
 		05C277A8295E3CC1006E1589 /* ai_unsplashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ai_unsplashUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,9 +90,9 @@
 		05C27789295E3CC0006E1589 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05C27788295E3CC0006E1589 /* ai unsplash.app */,
-				05C27798295E3CC1006E1589 /* ai unsplashTests.xctest */,
-				05C277A2295E3CC1006E1589 /* ai unsplashUITests.xctest */,
+				05C27788295E3CC0006E1589 /* randwall.app */,
+				05C27798295E3CC1006E1589 /* randwallTests.xctest */,
+				05C277A2295E3CC1006E1589 /* randwallUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05C27787295E3CC0006E1589 /* ai unsplash */ = {
+		05C27787295E3CC0006E1589 /* randwall */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05C277AC295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "ai unsplash" */;
+			buildConfigurationList = 05C277AC295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "randwall" */;
 			buildPhases = (
 				05C27784295E3CC0006E1589 /* Sources */,
 				05C27785295E3CC0006E1589 /* Frameworks */,
@@ -148,19 +148,19 @@
 			);
 			dependencies = (
 			);
-			name = "ai unsplash";
+			name = randwall;
 			packageProductDependencies = (
 				05C277B6295E4720006E1589 /* Alamofire */,
 				05C277B9295E52EC006E1589 /* Haptica */,
 				05C277BC295E577B006E1589 /* FeatureFlags */,
 			);
 			productName = "ai unsplash";
-			productReference = 05C27788295E3CC0006E1589 /* ai unsplash.app */;
+			productReference = 05C27788295E3CC0006E1589 /* randwall.app */;
 			productType = "com.apple.product-type.application";
 		};
-		05C27797295E3CC1006E1589 /* ai unsplashTests */ = {
+		05C27797295E3CC1006E1589 /* randwallTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05C277AF295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "ai unsplashTests" */;
+			buildConfigurationList = 05C277AF295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "randwallTests" */;
 			buildPhases = (
 				05C27794295E3CC1006E1589 /* Sources */,
 				05C27795295E3CC1006E1589 /* Frameworks */,
@@ -171,14 +171,14 @@
 			dependencies = (
 				05C2779A295E3CC1006E1589 /* PBXTargetDependency */,
 			);
-			name = "ai unsplashTests";
+			name = randwallTests;
 			productName = "ai unsplashTests";
-			productReference = 05C27798295E3CC1006E1589 /* ai unsplashTests.xctest */;
+			productReference = 05C27798295E3CC1006E1589 /* randwallTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		05C277A1295E3CC1006E1589 /* ai unsplashUITests */ = {
+		05C277A1295E3CC1006E1589 /* randwallUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05C277B2295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "ai unsplashUITests" */;
+			buildConfigurationList = 05C277B2295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "randwallUITests" */;
 			buildPhases = (
 				05C2779E295E3CC1006E1589 /* Sources */,
 				05C2779F295E3CC1006E1589 /* Frameworks */,
@@ -189,9 +189,9 @@
 			dependencies = (
 				05C277A4295E3CC1006E1589 /* PBXTargetDependency */,
 			);
-			name = "ai unsplashUITests";
+			name = randwallUITests;
 			productName = "ai unsplashUITests";
-			productReference = 05C277A2295E3CC1006E1589 /* ai unsplashUITests.xctest */;
+			productReference = 05C277A2295E3CC1006E1589 /* randwallUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -217,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05C27783295E3CC0006E1589 /* Build configuration list for PBXProject "ai unsplash" */;
+			buildConfigurationList = 05C27783295E3CC0006E1589 /* Build configuration list for PBXProject "randwall" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -235,9 +235,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05C27787295E3CC0006E1589 /* ai unsplash */,
-				05C27797295E3CC1006E1589 /* ai unsplashTests */,
-				05C277A1295E3CC1006E1589 /* ai unsplashUITests */,
+				05C27787295E3CC0006E1589 /* randwall */,
+				05C27797295E3CC1006E1589 /* randwallTests */,
+				05C277A1295E3CC1006E1589 /* randwallUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		05C2779A295E3CC1006E1589 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05C27787295E3CC0006E1589 /* ai unsplash */;
+			target = 05C27787295E3CC0006E1589 /* randwall */;
 			targetProxy = 05C27799295E3CC1006E1589 /* PBXContainerItemProxy */;
 		};
 		05C277A4295E3CC1006E1589 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05C27787295E3CC0006E1589 /* ai unsplash */;
+			target = 05C27787295E3CC0006E1589 /* randwall */;
 			targetProxy = 05C277A3295E3CC1006E1589 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -447,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shlomo.ai-unsplash";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shlomo.randwall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -477,7 +477,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shlomo.ai-unsplash";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shlomo.randwall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -500,7 +500,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ai unsplash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ai unsplash";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/randwall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/randwall";
 			};
 			name = Debug;
 		};
@@ -519,7 +519,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ai unsplash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ai unsplash";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/randwall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/randwall";
 			};
 			name = Release;
 		};
@@ -560,7 +560,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05C27783295E3CC0006E1589 /* Build configuration list for PBXProject "ai unsplash" */ = {
+		05C27783295E3CC0006E1589 /* Build configuration list for PBXProject "randwall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05C277AA295E3CC1006E1589 /* Debug */,
@@ -569,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05C277AC295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "ai unsplash" */ = {
+		05C277AC295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "randwall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05C277AD295E3CC1006E1589 /* Debug */,
@@ -578,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05C277AF295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "ai unsplashTests" */ = {
+		05C277AF295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "randwallTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05C277B0295E3CC1006E1589 /* Debug */,
@@ -587,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05C277B2295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "ai unsplashUITests" */ = {
+		05C277B2295E3CC1006E1589 /* Build configuration list for PBXNativeTarget "randwallUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05C277B3295E3CC1006E1589 /* Debug */,
