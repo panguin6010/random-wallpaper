@@ -84,7 +84,7 @@ struct ContentView: View {
         var ScreenWidth = "\(screenSize.width)"
          ScreenHeight = ScreenHeight.replacingOccurrences(of: ".0", with: "")
          ScreenWidth = ScreenWidth.replacingOccurrences(of: ".0", with: "")
-        var url = "https://source.unsplash.com/random/\(ScreenWidth)x\(ScreenHeight)?wallpaper"
+        let url = "https://source.unsplash.com/random/\(ScreenWidth)x\(ScreenHeight)?wallpaper"
         self.loading = true
         AF.request("\(url)").response { response in
           self.loading = false
@@ -97,7 +97,7 @@ struct ContentView: View {
           } else {
               // If the request fails, show an error message
                       self.errorMessage = "Failed to load image"
-                      print(self.errorMessage)
+              print(self.errorMessage as Any)
                       print("\(url)")
                     }
                   }
@@ -119,42 +119,42 @@ struct ContentView: View {
           }
 
           // View to display the image history
-          struct ImageHistoryView: View {
-            @Binding var imageHistory: [UIImage]
+struct ImageHistoryView: View {
+    @Binding var imageHistory: [UIImage]
 
-            var body: some View {
-              List(imageHistory, id: \.self) { image in
-                VStack {
-                  // Display the image
-                  Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                  HStack {
-                    // Share button
-                    Button(action: {
-                      let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-                      UIApplication.shared.windows.first?.rootViewController?.present(activityViewController, animated: true, completion: nil)
-                    }) {
-                      Image(systemName: "square.and.arrow.up")
-                    }
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-
-                    // Save button
-                    Button(action: {
-                      UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-                    }) {
-                      Image(systemName: "tray.and.arrow.down")
-                    }
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-                  }
-                }
-              }
+    var body: some View {
+      List(imageHistory, id: \.self) { image in
+        VStack {
+          // Display the image
+          Image(uiImage: image)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+          HStack {
+            // Share button
+            Button(action: {
+              let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+              UIApplication.shared.windows.first?.rootViewController?.present(activityViewController, animated: true, completion: nil)
+            }) {
+              Image(systemName: "square.and.arrow.up")
             }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(8)
+
+            // Save button
+            Button(action: {
+              UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            }) {
+              Image(systemName: "tray.and.arrow.down")
+            }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(8)
           }
+        }
+      }
+    }
+  }
 
