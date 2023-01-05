@@ -84,9 +84,9 @@ struct ContentView: View {
         var ScreenWidth = "\(screenSize.width)"
          ScreenHeight = ScreenHeight.replacingOccurrences(of: ".0", with: "")
          ScreenWidth = ScreenWidth.replacingOccurrences(of: ".0", with: "")
-
+        var url = "https://source.unsplash.com/random/\(ScreenWidth)x\(ScreenHeight)?wallpaper"
         self.loading = true
-        AF.request("https://source.unsplash.com/random/\(ScreenWidth)x\(ScreenHeight)").response { response in
+        AF.request("\(url)").response { response in
           self.loading = false
           if let data = response.data, let newImage = UIImage(data: data) {
             // Update the image and add it to the history if the request is successful
@@ -98,7 +98,7 @@ struct ContentView: View {
               // If the request fails, show an error message
                       self.errorMessage = "Failed to load image"
                       print(self.errorMessage)
-                      print("https://source.unsplash.com/random/\(ScreenWidth)x\(ScreenHeight)")
+                      print("\(url)")
                     }
                   }
                 }
